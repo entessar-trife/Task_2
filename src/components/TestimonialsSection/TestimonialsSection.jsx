@@ -55,10 +55,10 @@ function TestimonialsSection() {
           {currentCards.map((e, idx) => (
             <CardComponent
               key={idx}
-              x={e.x}
-              img={e.img}
+              showImg={e.showImg}
+              imgSrc={e.imgSrc}
               title={e.title}
-              star={e.star}
+              showStar={e.showStar}
               desc={e.desc}
             />
           ))}

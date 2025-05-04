@@ -1,26 +1,39 @@
 import './App.css'
 import NavBarComponent from './components/NavBarComponent/NavBarComponent'
-import HeroComponent from './components/HeroComponent/HeroComponent'
-import BenefitsSection from './components/BenefitsSection/BenefitsSection'
-import TestimonialsSection from './components/TestimonialsSection/TestimonialsSection'
-import FAQSection from './components/FAQSection/FAQSection'
-import NavigateSection from './components/NavigateSection/NavigateSection'
 import FooterComponent from './components/FooterComponent/FooterComponent'
 import BannerComponent from './components/BannerComponent/BannerComponent'
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home'
+import Academics from './Pages/Academics'
+import About from './Pages/About'
+import { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+
 
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000,
+      offset: 0,
+      once: false,
+      mirror: true
+    });
+  }, []);
 
   return (
     <>
+      <ScrollToTop />
       <BannerComponent />
-      <NavBarComponent logo="/assets/images/Logo.png" />
-      <HeroComponent />
-      <BenefitsSection />
-      <TestimonialsSection />
-      <FAQSection />
-      <NavigateSection />
+      <NavBarComponent logo="/Task_2/images/Logo.png" />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/academics' element={<Academics />} />
+      </Routes>
       <FooterComponent
-        logo="/assets/images/Logo.png"
+        logo="/Task_2/images/Logo.png"
         txt="We believe in the power of play to foster creativity,
               problem-solving skills, and imagination." />
     </>

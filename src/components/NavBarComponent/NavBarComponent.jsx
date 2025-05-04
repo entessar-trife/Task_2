@@ -33,6 +33,7 @@ function NavBarComponent({ logo }) {
                 <NavLink
                   key={index}
                   to={e.link}
+                  onClick={() => setMenuOpen(!open)}
                   className={({ isActive }) =>
                     `navLink fs-20 ${isActive ? "activeLink" : ""}`}>
                   {e.title}

@@ -1,7 +1,7 @@
 import "./BenefitsSection.css"
 import TitleComponent from '../TitleComponent/TitleComponent'
-import CardComponent from '../CardComponent/CardComponent'
 import { BenefitsCardData } from '../../Data/BenefitsCardData'
+import ContentCardComponent from "../ContentCardComponent/ContentCardComponent"
 
 function BenefitsSection() {
   return (
@@ -19,10 +19,9 @@ function BenefitsSection() {
           {
             BenefitsCardData.map((e, index) => {
               return (
-                <CardComponent
+                <ContentCardComponent
                   key={index}
-                  x={e.x}
-                  img={e.img}
+                  imgSrc={e.imgSrc}
                   title={e.title}
                   desc={e.desc}
                 />

@@ -13,6 +13,7 @@
   background-color: var(--white-color);
   color: var(--gray-20);
   padding: 10px 20px;
+  margin: 0 auto;
   border: 2px solid var(--black-color);
   width: fit-content;
   border-radius: 8px;
@@ -28,9 +29,8 @@
 }
 
 .titleComponent p {
-  width: 62.1553885%;
+  width: 62.406015%;
   text-align: center;
-  font-family: var(--outfit-font);
 }
 
 

@@ -58,6 +58,10 @@
 @media (max-width:1919px) {
 
   /* figma design */
+  .testimonialsSection .titleComponent p {
+    width: 68.4375%;
+  }
+
   .slider {
     gap: 40px;
   }
@@ -117,6 +121,10 @@
     width: 100%;
     padding: 30px;
     height: 322px;
+  }
+
+  .testimonialsSection .titleComponent p {
+    width: 100%;
   }
 
 }

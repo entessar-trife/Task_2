@@ -8,7 +8,7 @@ function FooterComponent({ logo, txt }) {
   return (
     <>
       <footer className="border box-shadow">
-        <div className="topFooter">
+        <div className="topFooter" data-aos="fade-up">
           <div className="contactInfo">
             <img src={logo} alt="logo" />
             <p className="fs-20"> {txt} </p>
@@ -29,7 +29,7 @@ function FooterComponent({ logo, txt }) {
           <div className="footerLinks">
             {FooterData.map((e, index) => (
               <div key={index}>
-                <h4>{e.title}</h4>
+                <h4> {e.title} </h4>
                 <ul>
                   {e.links.map((link, id) => (
                     <li key={id}>
@@ -45,7 +45,7 @@ function FooterComponent({ logo, txt }) {
 
         </div>
 
-        <div className="bottomFooter">
+        <div className="bottomFooter" data-aos="fade-up">
           <div className="bottomFooterLinks">
             {bottomLinks.map((link, index) => (
               <Link to={link.path}> {link.name} </Link>
@@ -60,7 +60,7 @@ function FooterComponent({ logo, txt }) {
           </div>
         </div>
 
-        <div className="copyRight fs-20">
+        <div className="copyRight fs-20" data-aos="fade-up">
           Copyright © [2023] Little Learners Academy.
           All rights reserved.
         </div>

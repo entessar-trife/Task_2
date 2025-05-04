@@ -6,7 +6,7 @@ import "./NavigateSection.css"
 function NavigateSection() {
   return (
     <>
-      <section className="px-162 pb-200">
+      <section className="navigateSection px-162 pb-200">
         <TitleComponent
           txt="Explore More"
           title="Navigate through our Pages"
@@ -21,11 +21,11 @@ function NavigateSection() {
             return (
               <CardComponent
                 key={index}
-                x={e.x}
-                img={e.img}
+                showImg={e.showImg}
+                imgSrc={e.imgSrc}
                 title={e.title}
                 desc={e.desc}
-                btn={e.btn}
+                showBtn={e.showBtn}
               />
             )
           })}

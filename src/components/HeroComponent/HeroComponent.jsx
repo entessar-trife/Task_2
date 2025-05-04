@@ -1,22 +1,17 @@
 import CountUp from "react-countup"
 import "./HeroComponent.css"
 
-function HeroComponent() {
+function HeroComponent({ heroImg, heroDesc }) {
   return (
     <>
-      <section className="heroComponent pb-200 px-162">
-        <img src="/assets/images/heroImage.png" alt="hero image" />
+      <section className="heroComponent pb-200 px-162" data-aos="zoom-in">
+        <img src={heroImg} alt="hero image" />
         <div className="rightSide">
           <span className="title"> Welcome to Little Learners Academy </span>
           <h2> Where Young Minds Blossom and
             <span> Dreams Take Flight. </span>
           </h2>
-          <p className="fs-20">
-            Our kinder garden school provides a nurturing and
-            stimulating environment, fostering a love for
-            learning that lasts a lifetime. Join us as we embark on an
-            exciting educational journey together!
-          </p>
+          <p className="fs-20"> {heroDesc} </p>
           <div className="heroCount border">
             <div className="counter">
               <div className="count">

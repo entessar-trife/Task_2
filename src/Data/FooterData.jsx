@@ -15,7 +15,7 @@ export const FooterData = [
   },
   {
     title: "About Us",
-    links: ["Our Mission", "Our Vission",
+    links: ["Our Mission", "Our Vision",
       "Awards and Recognitions", "History", "Teachers"]
   },
   {

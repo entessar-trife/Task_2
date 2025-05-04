@@ -142,6 +142,7 @@ footer p {
 
 .footerIcons a:hover {
   transform: scale(1.1);
+  background-color: var(--Orange-65);
 }
 
 .footerIcons a svg {

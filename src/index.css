@@ -7,9 +7,11 @@
   text-decoration: none;
   list-style: none;
 }
+
 body {
   background-color: var(--Orange-95);
 }
+
 :root {
   --black-color: #000000;
   --white-color: #FFFFFF;
@@ -33,6 +35,7 @@ body {
 
 .border {
   border: 2px solid var(--gray-15);
+  border-radius: 12px;
 }
 
 .pb-200 {
@@ -57,6 +60,10 @@ body {
 
 /* start responsive */
 @media (max-width:1919px) {
+  .border {
+    border-radius: 10px;
+  }
+
   .fs-20 {
     font-size: 16px;
   }
