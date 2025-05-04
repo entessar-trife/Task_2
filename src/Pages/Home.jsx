@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <HeroComponent
-        heroImg="/Task_2/images/heroImage.png"
+        heroImg="/Task_3/images/heroImage.png"
         heroDesc="Our kinder garden school provides a nurturing and
             stimulating environment, fostering a love for
             learning that lasts a lifetime. Join us as we embark on an

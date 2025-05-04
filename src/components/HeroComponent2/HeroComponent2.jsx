@@ -6,7 +6,7 @@ function HeroComponent2({ txt, title, desc }) {
     <>
       <section className="heroSection" data-aos="zoom-in">
         <div className="heroComponent2 border">
-          <img src="/Task_2/images/AbstractDesign.png" alt="hero image" />
+          <img src="/Task_3/images/AbstractDesign.png" alt="hero image" />
           <TitleComponent
             txt={txt}
             title={title}

@@ -7,7 +7,7 @@ function HistoryCardComponent({ year, title, desc }) {
         <div className="cardLine">
           <div className="line"></div>
           <div className='historyShape border box-shadow'>
-            <img src="/Task_2/images/AbstractDesign(1).png" alt="card shape" />
+            <img src="/Task_3/images/AbstractDesign(1).png" alt="card shape" />
             <h6> {year} </h6>
           </div>
         </div>

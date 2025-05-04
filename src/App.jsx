@@ -26,14 +26,14 @@ function App() {
     <>
       <ScrollToTop />
       <BannerComponent />
-      <NavBarComponent logo="/Task_2/images/Logo.png" />
+      <NavBarComponent logo="/Task_3/images/Logo.png" />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/academics' element={<Academics />} />
       </Routes>
       <FooterComponent
-        logo="/Task_2/images/Logo.png"
+        logo="/Task_3/images/Logo.png"
         txt="We believe in the power of play to foster creativity,
               problem-solving skills, and imagination." />
     </>
